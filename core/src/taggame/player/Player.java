@@ -12,7 +12,6 @@ public class Player extends GameObject {
     public static final Color Blue = Color.SKY;
 
     public static final HashMap<String, String>[] CONTROLS;
-
     static {
         //noinspection unchecked
         CONTROLS = new HashMap[2];
@@ -32,10 +31,14 @@ public class Player extends GameObject {
 
     public int player;
 
+    public boolean hasOrb = false;
+    public GameObject orb;
+
     public void init() {
         player = GameState.PLAYERS++;
         setColor();
         components.add(new Movement(this, CONTROLS[player]));
+        components.add(new Tag(this));
     }
 
     private void setColor() {
