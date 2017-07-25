@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":ios" external.linked.project.path="$MODULE_DIR$/../../../ios" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="tag-game" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../../../ios/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/../../../ios/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../ios">
+      <sourceFolder url="file://$MODULE_DIR$/../../../ios/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../ios/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../ios/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../ios/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../ios/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../ios/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="core" exported="" />
+    <orderEntry type="library" exported="" name="Gradle: org.robovm:robovm-objc:1.12.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.badlogicgames.gdx:gdx:1.9.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.badlogicgames.gdx:gdx-freetype-platform:1.9.2:natives-ios" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.badlogicgames.gdx:gdx-platform:1.9.2:natives-ios" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.badlogicgames.gdx:gdx-backend-robovm:1.9.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.robovm:robovm-cocoatouch:1.12.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.robovm:robovm-rt:1.12.0" level="project" />
+  </component>
+</module>
