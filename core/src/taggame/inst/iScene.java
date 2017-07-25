@@ -8,6 +8,8 @@ public class iScene extends Instantiator {
 	public GameObject newObject(JsonValue gobj){
 		String name = gobj.name;
 
+		if (gobj.get("class").asString().equals("GameState"))
+			return new taggame.GameState();
 		if (gobj.get("class").asString().equals("Player"))
 			return new taggame.player.Player();
 
