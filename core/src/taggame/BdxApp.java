@@ -13,7 +13,7 @@ public class BdxApp implements ApplicationListener {
 		Bdx.init();
 
 		Scene.instantiators = new HashMap<String, Instantiator>();
-		Scene.instantiators.put("Scene", null);
+		Scene.instantiators.put("Scene", new taggame.inst.iScene());
 
 		Bdx.scenes.add(new Scene("Scene"));
 		Bdx.firstScene = "Scene";
