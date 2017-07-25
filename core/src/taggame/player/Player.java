@@ -35,7 +35,7 @@ public class Player extends GameObject {
     public void init() {
         player = GameState.PLAYERS++;
         setColor();
-        components.add(new Movement(this, player));
+        components.add(new Movement(this, CONTROLS[player]));
     }
 
     private void setColor() {

@@ -8,7 +8,7 @@ import javax.vecmath.Vector3f;
 
 public class GameState extends GameObject {
     public static int PLAYERS = 0;
-    public static Vector2f[] POSITIONS = { new Vector2f(2, 2), new Vector2f(4, 4) };
+    public static Vector2f[] POSITIONS = { new Vector2f(-2, -2), new Vector2f(2, 2) };
     public void init() {
         Player player1 = (Player)scene.add("Player");
         player1.position(setPosition(POSITIONS[player1.player]));
