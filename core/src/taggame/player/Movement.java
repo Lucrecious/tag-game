@@ -11,7 +11,7 @@ public class Movement extends Component {
         State core = new State() {
             @Override
             public void main() {
-
+                g.collisionGroup();
             }
         };
 

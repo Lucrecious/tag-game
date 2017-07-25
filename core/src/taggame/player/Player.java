@@ -13,6 +13,6 @@ public class Player extends GameObject {
     }
 
     private void setColor() {
-        materials.color(new com.nilunder.bdx.utils.Color(Blue));
+        materials.color(new com.nilunder.bdx.utils.Color(Orange));
     }
 }
