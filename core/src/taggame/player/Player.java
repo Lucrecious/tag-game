@@ -9,6 +9,7 @@ import java.util.HashMap;
 public class Player extends GameObject {
     public static final Color Orange = Color.ORANGE;
     public static final Color Blue = Color.SKY;
+    public static final Color Hurt = Color.RED;
 
     public static final HashMap<String, String>[] CONTROLS;
     static {
@@ -40,7 +41,7 @@ public class Player extends GameObject {
         components.add(new Tag(this));
     }
 
-    private void setColor() {
+    public void setColor() {
         Color color;
         if (player == 0) {
             color = Orange;

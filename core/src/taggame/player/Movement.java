@@ -9,8 +9,6 @@ import javax.vecmath.Vector3f;
 
 import java.util.HashMap;
 
-import static taggame.player.Player.CONTROLS;
-
 public class Movement extends Component {
     private final String up;
     private final String down;

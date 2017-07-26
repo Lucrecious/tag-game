@@ -4,6 +4,7 @@ import com.nilunder.bdx.Bdx;
 import com.nilunder.bdx.Component;
 import com.nilunder.bdx.GameObject;
 import com.nilunder.bdx.State;
+import com.nilunder.bdx.utils.Color;
 
 import javax.vecmath.Vector3f;
 
@@ -56,18 +57,25 @@ public class Tag extends Component {
 
     private State stun = new State() {
         private float time;
-        private float seconds = 2;
+        private float seconds = 1f;
 
         @Override
         public void enter() {
             time = Bdx.time;
+            player.materials.color(new Color(Player.Hurt));
         }
 
         @Override
         public void main() {
+            player.velocity(0, 0, 0);
             if (Bdx.time - time > seconds) {
                 state(empty);
             }
+        }
+
+        @Override
+        public void exit() {
+            player.setColor();
         }
     };
 }
