@@ -1,10 +1,13 @@
 package taggame.player;
 
+import com.nilunder.bdx.Bdx;
 import com.nilunder.bdx.Component;
 import com.nilunder.bdx.GameObject;
 import com.nilunder.bdx.State;
 
 import javax.vecmath.Vector3f;
+
+import static taggame.GameState.PLAYERS;
 
 public class Tag extends Component {
     private final Player player;
@@ -21,6 +24,21 @@ public class Tag extends Component {
                 player.hasOrb = true;
                 state(holder);
             }
+
+            for (Player otherPlayer : PLAYERS) {
+                if (otherPlayer.player == player.player) {
+                    continue;
+                }
+
+                for (GameObject g : player.touchingObjects) {
+                    if (g == otherPlayer && otherPlayer.hasOrb) {
+                        otherPlayer.hasOrb = false;
+                        // otherPlayer.stun();
+                        player.hasOrb = true;
+                        state(holder);
+                    }
+                }
+            }
         }
     };
 
@@ -29,6 +47,27 @@ public class Tag extends Component {
         @Override
         public void main() {
             player.orb.position(player.position().plus(localOrb));
+
+            if (!player.hasOrb) {
+                state(stun);
+            }
+        }
+    };
+
+    private State stun = new State() {
+        private float time;
+        private float seconds = 2;
+
+        @Override
+        public void enter() {
+            time = Bdx.time;
+        }
+
+        @Override
+        public void main() {
+            if (Bdx.time - time > seconds) {
+                state(empty);
+            }
         }
     };
 }

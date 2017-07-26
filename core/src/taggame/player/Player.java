@@ -2,7 +2,6 @@ package taggame.player;
 
 import com.badlogic.gdx.graphics.Color;
 import com.nilunder.bdx.GameObject;
-import com.sun.org.apache.xpath.internal.operations.Or;
 import taggame.GameState;
 
 import java.util.HashMap;
@@ -35,7 +34,7 @@ public class Player extends GameObject {
     public GameObject orb;
 
     public void init() {
-        player = GameState.PLAYERS++;
+        player = GameState.NUM_PLAYERS++;
         setColor();
         components.add(new Movement(this, CONTROLS[player]));
         components.add(new Tag(this));
