@@ -8,6 +8,8 @@ public abstract class Effect {
 
     private final float creationTime;
 
+    public boolean applied = false;
+
     public Effect(final Player player, final float creationTime) {
         this.player = player;
         this.creationTime = creationTime;

@@ -37,7 +37,6 @@ public class Itemer extends Component {
             if (Bdx.keyboard.keyDown("e")) {
                 Effect effect = current.effect(player);
                 player.effects.addLast(effect);
-                player.effects.getLast().apply();
                 current = null;
                 state(noItem);
             }

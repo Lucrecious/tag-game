@@ -144,7 +144,7 @@ public class GameState extends GameObject {
             public void main() {
                 if (Bdx.time - time > spawnSeconds) {
                     Item item = (Item)scene.add("Item");
-                    item.init(Ghost.class);
+                    item.init(Boost.class);
                     item.position(setPosition(Random.choice(freeSpaces), 0.5f));
                     state(core);
                 }

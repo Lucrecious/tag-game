@@ -23,12 +23,14 @@ public class Player extends GameObject {
         CONTROLS[0].put("down", "down");
         CONTROLS[0].put("left", "left");
         CONTROLS[0].put("right", "right");
+        CONTROLS[0].put("item", ".");
 
         CONTROLS[1] = new HashMap<String, String>();
         CONTROLS[1].put("up", "w");
         CONTROLS[1].put("down", "s");
         CONTROLS[1].put("left", "a");
         CONTROLS[1].put("right", "d");
+        CONTROLS[1].put("item", "f");
     }
 
     public int player;
@@ -73,6 +75,11 @@ public class Player extends GameObject {
             if (effect.finished()) {
                 effect.destroy();
             } else {
+                if (!effect.applied) {
+                    effect.applied = true;
+                    effect.apply();
+                }
+
                 effects.addLast(effect);
             }
         }
