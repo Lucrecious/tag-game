@@ -15,8 +15,12 @@ public class Movement extends Component {
     private final String left;
     private final String right;
 
-    public Movement(final GameObject g, final HashMap<String, String> controls) {
+    private final Player player;
+
+    public Movement(final Player g, final HashMap<String, String> controls) {
         super(g);
+
+        player = g;
 
         up = controls.get("up");
         down = controls.get("down");
@@ -24,12 +28,10 @@ public class Movement extends Component {
         right = controls.get("right");
 
         State core = new State() {
-            private float speed = 10;
-
             @Override
             public void main() {
                 Vector3f direction = vector();
-                g.velocity(direction.mul(speed));
+                g.velocity(direction.mul(player.currentSpeed));
                 if (direction.length() > 0) {
                     g.alignAxisToVec("Y", direction, 0.5f);
                 }

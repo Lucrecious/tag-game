@@ -3,15 +3,11 @@ package taggame;
 import com.nilunder.bdx.Component;
 import com.nilunder.bdx.GameObject;
 import com.nilunder.bdx.State;
-import com.nilunder.bdx.utils.Timer;
 import taggame.player.Player;
 import taggame.player.TimerCube;
 
 import javax.vecmath.Vector2f;
 import javax.vecmath.Vector3f;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 public class GameState extends GameObject {

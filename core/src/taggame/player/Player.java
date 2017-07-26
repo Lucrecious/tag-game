@@ -3,8 +3,10 @@ package taggame.player;
 import com.badlogic.gdx.graphics.Color;
 import com.nilunder.bdx.GameObject;
 import taggame.GameState;
+import taggame.items.Effect;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 
 public class Player extends GameObject {
     public static final Color Orange = Color.ORANGE;
@@ -30,6 +32,11 @@ public class Player extends GameObject {
     }
 
     public int player;
+
+    public float maxSpeed = 10;
+    public float currentSpeed = 10;
+
+    protected LinkedList<Effect> effects = new LinkedList<Effect>();
 
     public boolean hasOrb = false;
     public GameObject orb;
