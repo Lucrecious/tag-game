@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e909c7-0239-4eec-b741-a6e69ffc0a2a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/taggame/items/Boost.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/taggame/items/Effect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/taggame/items/Item.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/taggame/player/Itemer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blender/game.blend" afterPath="$PROJECT_DIR$/blender/game.blend" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blender/game.blend1" afterPath="$PROJECT_DIR$/blender/game.blend1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/taggame/GameState$Timer$1.class" afterPath="$PROJECT_DIR$/core/build/classes/main/taggame/GameState$Timer$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/taggame/GameState$Timer.class" afterPath="$PROJECT_DIR$/core/build/classes/main/taggame/GameState$Timer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/taggame/GameState.class" afterPath="$PROJECT_DIR$/core/build/classes/main/taggame/GameState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/taggame/inst/iScene.class" afterPath="$PROJECT_DIR$/core/build/classes/main/taggame/inst/iScene.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/taggame/player/Movement$1.class" afterPath="$PROJECT_DIR$/core/build/classes/main/taggame/player/Movement$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/taggame/player/Movement.class" afterPath="$PROJECT_DIR$/core/build/classes/main/taggame/player/Movement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/taggame/player/Player.class" afterPath="$PROJECT_DIR$/core/build/classes/main/taggame/player/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/bdx/scenes/Scene.bdx" afterPath="$PROJECT_DIR$/android/assets/bdx/scenes/Scene.bdx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/taggame/GameState.java" afterPath="$PROJECT_DIR$/core/src/taggame/GameState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/taggame/player/Movement.java" afterPath="$PROJECT_DIR$/core/src/taggame/player/Movement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/taggame/inst/iScene.java" afterPath="$PROJECT_DIR$/core/src/taggame/inst/iScene.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/taggame/player/Player.java" afterPath="$PROJECT_DIR$/core/src/taggame/player/Player.java" />
     </list>
     <ignored path="tag-game.iws" />
@@ -48,27 +63,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="303">
+              <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1123#1131#0" expanded="true" />
+                <element signature="e#1487#1488#0" expanded="true" />
+                <element signature="e#1517#1518#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Effect.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Effect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/taggame/items/Effect.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
                 <element signature="e#425#426#0" expanded="true" />
               </folding>
             </state>
@@ -94,6 +110,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/taggame/items/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Itemer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Itemer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#452#764#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#796#1148#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Movement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Movement.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,10 +155,11 @@
       <file leaf-file-name="GameState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/taggame/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-807">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
               <folding>
-                <element signature="e#1939#1950#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2135#2146#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,7 +168,7 @@
       <file leaf-file-name="Tag.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Tag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="1050">
               <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1767,12 +1812,13 @@
         <option value="$PROJECT_DIR$/core/src/taggame/player/Tag.java" />
         <option value="$PROJECT_DIR$/core/src/taggame/Timer.java" />
         <option value="$PROJECT_DIR$/core/src/taggame/player/TimerCube.java" />
-        <option value="$PROJECT_DIR$/core/src/taggame/GameState.java" />
-        <option value="$PROJECT_DIR$/core/src/taggame/items/Item.java" />
         <option value="$PROJECT_DIR$/core/src/taggame/player/Movement.java" />
-        <option value="$PROJECT_DIR$/core/src/taggame/player/Player.java" />
-        <option value="$PROJECT_DIR$/core/src/taggame/items/Effect.java" />
         <option value="$PROJECT_DIR$/core/src/taggame/items/Boost.java" />
+        <option value="$PROJECT_DIR$/core/src/taggame/GameState.java" />
+        <option value="$PROJECT_DIR$/core/src/taggame/player/Itemer.java" />
+        <option value="$PROJECT_DIR$/core/src/taggame/items/Item.java" />
+        <option value="$PROJECT_DIR$/core/src/taggame/items/Effect.java" />
+        <option value="$PROJECT_DIR$/core/src/taggame/player/Player.java" />
       </list>
     </option>
   </component>
@@ -2355,7 +2401,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -2366,6 +2414,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1123#1131#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2444,20 +2494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#464#1189#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/core/libs/bdx.jar!/com/nilunder/bdx/Bdx.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2498,21 +2534,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/taggame/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#1939#1950#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/taggame/items.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319">
+          <caret line="1821" column="26" selection-start-line="1821" selection-start-column="26" selection-end-line="1821" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Tag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#464#1189#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#2025#2026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/taggame/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2135#2146#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2528,13 +2587,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Player.java">
+    <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Itemer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        <state relative-caret-position="540">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1123#1131#0" expanded="true" />
+            <element signature="e#452#764#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#796#1148#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/taggame/items/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2559,11 +2631,23 @@
     <entry file="file://$PROJECT_DIR$/core/src/taggame/items/Effect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/taggame/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1123#1131#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,6 +3,8 @@ package taggame;
 import com.nilunder.bdx.Component;
 import com.nilunder.bdx.GameObject;
 import com.nilunder.bdx.State;
+import taggame.items.Boost;
+import taggame.items.Item;
 import taggame.player.Player;
 import taggame.player.TimerCube;
 
@@ -30,6 +32,11 @@ public class GameState extends GameObject {
         PLAYERS[1] = (Player)scene.add("Player");
         PLAYERS[1].orb = orb;
         PLAYERS[1].position(setPosition(POSITIONS[PLAYERS[1].player], 1));
+
+        Item item = (Item)scene.add("Item");
+        item.init(Boost.class);
+        item.position(setPosition(new Vector2f(6, 6), 0.5f));
+
     }
 
     private void initializeBoard() {

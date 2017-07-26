@@ -41,11 +41,18 @@ public class Player extends GameObject {
     public boolean hasOrb = false;
     public GameObject orb;
 
+    @Override
     public void init() {
         player = GameState.NUM_PLAYERS++;
         setColor();
         components.add(new Movement(this, CONTROLS[player]));
         components.add(new Tag(this));
+        components.add(new Itemer(this));
+    }
+
+    @Override
+    public void main() {
+        cycleEffects();
     }
 
     public void setColor() {
@@ -57,5 +64,16 @@ public class Player extends GameObject {
         }
 
         materials.color(new com.nilunder.bdx.utils.Color(color));
+    }
+
+    private void cycleEffects() {
+        for (int i = 0; i < effects.size(); i++) {
+            Effect effect = effects.pollFirst();
+            if (effect.finished()) {
+                effect.destroy();
+            } else {
+                effects.addLast(effect);
+            }
+        }
     }
 }
