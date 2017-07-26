@@ -3,6 +3,7 @@ package taggame.items;
 import com.nilunder.bdx.Bdx;
 import com.nilunder.bdx.GameObject;
 import com.nilunder.bdx.utils.Color;
+import com.nilunder.bdx.utils.Random;
 import taggame.player.Player;
 
 public class Item extends GameObject {
@@ -11,6 +12,12 @@ public class Item extends GameObject {
     public void init(Class<?> effect) {
         this.effect = effect;
         setColor();
+        rotate(0, 0, Random.random()*20);
+    }
+
+    @Override
+    public void main() {
+        rotate(0, 0, 0.05f);
     }
 
     public Effect effect(Player player) {
@@ -25,6 +32,8 @@ public class Item extends GameObject {
     private void setColor() {
         if (effect.isAssignableFrom(Boost.class)) {
             materials.color(new Color(Color.YELLOW));
+        } else if (effect.isAssignableFrom(Ghost.class)) {
+            materials.color(new Color(Color.TEAL));
         }
     }
 }

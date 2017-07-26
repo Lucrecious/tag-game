@@ -44,6 +44,7 @@ public class Player extends GameObject {
     @Override
     public void init() {
         player = GameState.NUM_PLAYERS++;
+        collisionGroup(GameState.CGInnerWall);
         setColor();
         components.add(new Movement(this, CONTROLS[player]));
         components.add(new Tag(this));
