@@ -67,7 +67,6 @@ public class GameState extends GameObject {
         initializeBoard();
 
         GameObject orb = scene.add("Orb");
-        orb.position(setPosition(new Vector2f(0, 0), 0.5f));
 
         PLAYERS[0] = (Player)scene.add("Player");
         PLAYERS[0].orb = orb;
@@ -77,7 +76,11 @@ public class GameState extends GameObject {
         PLAYERS[1].orb = orb;
         PLAYERS[1].position(setPosition(POSITIONS[PLAYERS[1].player], 1));
 
-        components.add(new Spawner(this, freeSpaces()));
+        ArrayList<Vector2f> freeSpaces = freeSpaces();
+
+        orb.position(setPosition(Random.choice(freeSpaces), 0.5f));
+
+        components.add(new Spawner(this, freeSpaces));
     }
 
     private ArrayList<Vector2f> freeSpaces() {
@@ -85,7 +88,9 @@ public class GameState extends GameObject {
 
         for (int i = 1; i < GRID_SIZE - 1; i++) {
             for (int j = 1; j < GRID_SIZE - 1; j++) {
-                freeSpaces.add(new Vector2f(j*TILE_SIZE + OFFSET, i*TILE_SIZE + OFFSET));
+                if (map[j-1][i-1] == 0) {
+                    freeSpaces.add(new Vector2f(j * TILE_SIZE + OFFSET, i * TILE_SIZE + OFFSET));
+                }
             }
         }
 
