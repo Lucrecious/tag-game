@@ -9,10 +9,12 @@ import taggame.items.Item;
 
 public class Itemer extends Component {
     private final Player player;
+    private final String itemButton;
 
-    public Itemer(final Player g) {
+    public Itemer(final Player g, final String itemButton) {
         super(g);
         player = g;
+        this.itemButton = itemButton;
         state(noItem);
     }
 
@@ -34,7 +36,7 @@ public class Itemer extends Component {
     private State withItem = new State() {
         @Override
         public void main() {
-            if (Bdx.keyboard.keyDown("e")) {
+            if (Bdx.keyboard.keyDown(itemButton)) {
                 Effect effect = current.effect(player);
                 player.effects.addLast(effect);
                 current = null;

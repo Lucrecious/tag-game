@@ -50,7 +50,7 @@ public class Player extends GameObject {
         setColor();
         components.add(new Movement(this, CONTROLS[player]));
         components.add(new Tag(this));
-        components.add(new Itemer(this));
+        components.add(new Itemer(this, CONTROLS[player].get("item")));
     }
 
     @Override
