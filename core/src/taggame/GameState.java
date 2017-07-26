@@ -106,7 +106,7 @@ public class GameState extends GameObject {
                 }
 
                 if (wall != null) {
-                    wall.position(setPosition(new Vector2f(i * TILE_SIZE + OFFSET, j * TILE_SIZE + OFFSET), 1));
+                    wall.position(setPosition(new Vector2f(i * TILE_SIZE + OFFSET, j * TILE_SIZE + OFFSET), 0.4f));
                 }
             }
         }
